@@ -31,3 +31,4 @@ C:\xampp\htdocs\prueba-software-7-2023\backend\obj\Debug\net7.0\refint\backend.d
 C:\xampp\htdocs\prueba-software-7-2023\backend\obj\Debug\net7.0\backend.pdb
 C:\xampp\htdocs\prueba-software-7-2023\backend\obj\Debug\net7.0\backend.genruntimeconfig.cache
 C:\xampp\htdocs\prueba-software-7-2023\backend\obj\Debug\net7.0\ref\backend.dll
+C:\xampp\htdocs\prueba-software-7-2023\backend\bin\Debug\net7.0\Dapper.dll

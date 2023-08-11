@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wE+katv9m9AqHIvaJF8SSrCZN47lRBX79Tq/5Q8PGTMt8QMvFk3zrTUdcFiZwf1L/HLhvNUXuD5o0NLO2inDyQ==",
+  "dgSpecHash": "+N3JRGMOB7pq5bWuU0PAP/joFjMU4DDz/7KWemLZbSKum85FOVVndKl5OWoZzLAL3qInjUK7VH67NbnILLGGHg==",
   "success": true,
   "projectFilePath": "C:\\xampp\\htdocs\\prueba-software-7-2023\\backend\\backend.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Arteaga\\.nuget\\packages\\dapper\\2.0.143\\dapper.2.0.143.nupkg.sha512",
     "C:\\Users\\Arteaga\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
     "C:\\Users\\Arteaga\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Arteaga\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
