@@ -32,3 +32,9 @@ C:\xampp\htdocs\prueba-software-7-2023\backend\obj\Debug\net7.0\backend.pdb
 C:\xampp\htdocs\prueba-software-7-2023\backend\obj\Debug\net7.0\backend.genruntimeconfig.cache
 C:\xampp\htdocs\prueba-software-7-2023\backend\obj\Debug\net7.0\ref\backend.dll
 C:\xampp\htdocs\prueba-software-7-2023\backend\bin\Debug\net7.0\Dapper.dll
+C:\xampp\htdocs\prueba-software-7-2023\backend\bin\Debug\net7.0\System.Data.SqlClient.dll
+C:\xampp\htdocs\prueba-software-7-2023\backend\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+C:\xampp\htdocs\prueba-software-7-2023\backend\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+C:\xampp\htdocs\prueba-software-7-2023\backend\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+C:\xampp\htdocs\prueba-software-7-2023\backend\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\xampp\htdocs\prueba-software-7-2023\backend\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
