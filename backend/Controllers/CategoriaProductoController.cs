@@ -10,25 +10,58 @@ namespace backend.Controllers;
 public class CategoriaProductoController : ControllerBase
 {   
     private readonly IConfiguration _configuration;
-    private readonly string connectionString;
+    private readonly string? connectionString;
 
-    public CategoriaProductoController(IConfiguration configuration){
+
+    public CategoriaProductoController(IConfiguration configuration)
+    {
         _configuration = configuration;
-        connectionString = _configuration[""];
+        connectionString = _configuration["SqlConnectionString:DefaultConnection"];
         BDManager.GetInstance.ConnectionString = connectionString;
     }
 
     [HttpGet]
-
-    public IActionResult Get(){
+    [Route("GetAllCategoriaProducto")]
+    public IActionResult GetAllCategoriaProducto()
+    {
         try
         {
             var result = CategoriaProductoServicios.ObtenerTodo<CategoriaProducto>();
             return Ok(result);
         }
-        catch (Exception er)
+        catch (Exception ex)
         {
-            return StatusCode(500, er.Message);
+            return StatusCode(500, ex.Message);
+        }
+    }
+
+    [HttpGet]
+    [Route("GetAllCategoriaProductoById")]
+    public IActionResult GetAllCategoriaProductoById([FromQuery] int id)
+    {
+        try
+        {
+            var result = CategoriaProductoServicios.ObtenerById<CategoriaProducto>(id);
+            return Ok(result);
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, ex.Message);
+        }
+    }
+
+    [HttpPost]
+    [Route("AddCategoriaProducto")]
+    public IActionResult AddCategoriaProducto(CategoriaProducto categoriaProducto)
+    {
+        try
+        {
+            var result = CategoriaProductoServicios.InsertCategoriaProducto(categoriaProducto);
+            return Ok(result);
+        }
+        catch (Exception err)
+        {
+            return StatusCode(500, err.Message);
         }
     }
 }
