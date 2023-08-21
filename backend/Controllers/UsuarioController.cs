@@ -2,8 +2,12 @@ using backend.connection;
 using backend.entidades;
 using backend.servicios;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Cors;
 
 namespace backend.Controllers;
+
+// tener en cuentra que debes hacer uso del AspNetCore.Cors
+[EnableCors("CorsDev")]
 
 [ApiController]
 [Route("api/[controller]")]
