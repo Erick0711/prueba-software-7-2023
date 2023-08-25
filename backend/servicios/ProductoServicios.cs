@@ -9,7 +9,8 @@ namespace backend.servicios
     {
         public static IEnumerable<T> ObtenerTodo<T>()
         {
-            const string sql = "select top 5 * from PRODUCTO";
+            const string sql = "select top 5 * from PRODUCTO ORDER BY ID DESC";
+            // SELECT TOP 5 PRODUCTO.ID,PRODUCTO.NOMBRE, CATEGORIA_PRODUCTO.NOMBRE FROM PRODUCTO INNER JOIN CATEGORIA_PRODUCTO ON CATEGORIA_PRODUCTO.ID=PRODUCTO.ID_CATEGORIA ORDER BY PRODUCTO.ID DESC
             return BDManager.GetInstance.GetData<T>(sql);//Dapper
         }
 
