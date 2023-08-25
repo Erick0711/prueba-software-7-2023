@@ -12,18 +12,21 @@
       <ion-title size="large">Categoria</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-item>
 
-    <ion-input type='text' placeholder='Nombre Categoria:*' [(ngModel)]="nombreCategoria"></ion-input>
-    <br>
-    <ion-button (click)="addCategoria()">Agregar Usuario</ion-button>
+  <ion-item>
+    <ion-input id="categoriaProducto" type='text' placeholder='Nombre Categoria:*' [(ngModel)]="nombre"></ion-input>
+    <ion-button id="addCategoriaProducto" (click)="addCategoria()">Agregar Categoria</ion-button>
   </ion-item>
-  <br>
-  <ion-list>
-    <ion-item *ngFor='let item of listaCategoria'>
-      <b>Nombre: </b>{{item.nombreCategoria}}
-    </ion-item>
-  </ion-list>
+  
+  <ion-grid class="custom-table">
+    <ion-row class="header-row">
+      <ion-col><b>Nombre Categoria</b></ion-col>
+    </ion-row>
+    
+    <ion-row class="data-row" *ngFor="let item of listaCategorias">
+      <ion-col>{{ item.nombre }}</ion-col>
+    </ion-row>
+  </ion-grid>
 
   <app-explore-container name="Categoria"></app-explore-container>
 </ion-content>

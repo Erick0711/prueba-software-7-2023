@@ -9,13 +9,13 @@ namespace backend.servicios
     {
         public static IEnumerable<T> ObtenerTodo<T>()
         {
-            const string sql = "select * from categoria_producto";
+            const string sql = "SELECT top 5 * FROM CATEGORIA_PRODUCTO WHERE estado_registro = 1 ORDER BY ID DESC";
             return BDManager.GetInstance.GetData<T>(sql);//Dapper
         }
 
         public static T ObtenerById<T>(int id)
         {
-            const string sql = "select * from categoria_producto where ID = @Id and estado_registro = 1";
+            const string sql = "select top 5 * from categoria_producto where ID = @Id and estado_registro = 1";
 
             var parameters = new DynamicParameters();
             parameters.Add("id", id, DbType.Int64);

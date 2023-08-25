@@ -14,17 +14,30 @@
   </ion-header>
 
 <ion-item>
-  <ion-input type='text' placeholder='Nombre completo:*' [(ngModel)]="nombreCompleto"></ion-input>
+  <ion-input id="nombreCompleto" type='text' placeholder='Nombre completo:*' [(ngModel)]="nombreCompleto"></ion-input>
   <ion-input type='text' placeholder='Usuario: *' [(ngModel)]="userName"></ion-input>
   <ion-input type='password' placeholder='Contraseña:*' [(ngModel)]="password"></ion-input>
+  
+  <!-- <ion-button id="deleteUser" (click)="deleteUser()"></ion-button> -->
   <br>
-  <ion-button (click)="addUsuario()">Agregar Usuario</ion-button>
+  <ion-button id="addUser" (click)="addUsuario()">Agregar Usuario</ion-button>
 </ion-item>
+
 <br>
-<ion-list>
-  <ion-item *ngFor='let item of listaUsuarios'>
-    <b>Nombre: </b>{{item.nombreCompleto}}, {{item.userName}}, {{item.password}}
-  </ion-item>
-</ion-list>
-  <!-- <app-explore-container name="Usuarios"></app-explore-container> -->
+<ion-grid class="custom-table">
+  <ion-row class="header-row">
+    <ion-col><b>Nombre Completo</b></ion-col>
+    <ion-col><b>Nombre de Usuario</b></ion-col>
+    <ion-col><b>Contraseña</b></ion-col>
+  </ion-row>
+  
+  <ion-row class="data-row" *ngFor="let item of listaUsuarios">
+    <ion-col>{{ item.nombreCompleto }}</ion-col>
+    <ion-col>{{ item.userName }}</ion-col>
+    <ion-col>{{ item.password }}</ion-col>
+    <!-- <ion-button id="deleteUser" (click)="deleteUser()"></ion-button> -->
+  </ion-row>
+</ion-grid>
+
+  <app-explore-container name="Usuarios"></app-explore-container>
 </ion-content>

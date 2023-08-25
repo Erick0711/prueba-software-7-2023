@@ -1,0 +1,18 @@
+.custom-table {
+  padding: 15px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.header-row {
+  background-color: #079cce;
+  border-bottom: 2px solid #000; 
+}
+
+.data-row {
+  border-bottom: 1px solid #ddd;
+}
+
+ion-col {
+  padding: 8px;
+}

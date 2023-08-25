@@ -1,3 +1,3 @@
-export class Categoria{
-    public nombreCategoria:string = "";
+export class Categorias{
+    public nombre:string = "";
 }
